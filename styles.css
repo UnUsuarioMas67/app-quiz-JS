@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+	--primary: #27187e;
+	--answer-border: #aeb8fe;
+	--answer-outline-hover: #758bfd;
+	--almost-white: #f4f4f4;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Inter', sans-serif;
+}
+
+body {
+	display: grid;
+	place-items: center;
+	height: 100vh;
+	background-color: var(--primary);
+}
+
+main {
+	background-color: var(--almost-white);
+	border-radius: 20px;
+	padding: 2rem;
+
+	max-width: 550px;
+	width: 100%;
+}
+
+h1 {
+	text-align: center;
+	color: var(--primary);
+}
+
+hr {
+	background-color: black;
+	opacity: 0.25;
+	height: 2px;
+	border: none;
+	border-radius: 2px;
+	margin-bottom: 24px;
+}
+
+main > div {
+	display: flex;
+	flex-direction: column;
+	gap: 2.5rem;
+}
+
+[data-inactive] {
+	display: none;
+}
+
+#question-counter {
+	font-size: 14px;
+	color: rgba(0, 0, 0, .5);
+}
+
+h2 {
+	font-size: 24px;
+	font-weight: 600;
+}
+
+.buttons {
+	display: flex;
+	justify-content: space-between;
+	align-self: center;
+	max-width: 300px;
+	width: 100%;
+	padding: 10px 0;
+}
+
+.buttons button {
+	background-color: var(--primary);
+	color: white;
+	border: none;
+	border-radius: 10px;
+	padding: 0.75rem 1.5rem;
+}
+
+.buttons button:hover {
+	filter: brightness(1.2);
+}
+
+#answers {
+    display: flex;
+    flex-direction: column;
+	gap: 24px;
+}
+
+.answer {
+    display: block;
+
+	text-align: left;
+	background-color: transparent;
+
+	padding: 0.75rem 1.5rem;
+	border: 2px solid var(--answer-border);
+	border-radius: 5px;
+}
+
+.answer:hover {
+	outline: 2px solid var(--answer-outline-hover);
+}
+
+.answer:disabled {
+	border: 2px solid rgba(0, 0, 0, .1);
+}
+
+.answer:disabled:hover {
+	outline: none;
+}
+
+.answer.answer-correct {
+	background-color: rgb(237, 255, 237);
+	border-color: rgb(80, 168, 80);
+}
+
+.answer.answer-wrong {
+	background-color: rgb(255, 237, 237);
+	border-color: rgb(168, 80, 80);
+}
+
+#score {
+	text-align: center;
+	font-size: 64px;
+	color: var(--primary);
+}

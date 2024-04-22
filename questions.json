@@ -1,0 +1,32 @@
+[
+	{
+		"question": "Pregunta uno?",
+		"answers": ["respuesta 1", "respuesta 2", "respuesta 3", "respuesta 4"],
+		"correctAnswer": 0
+	},
+	{
+		"question": "Pregunta dos?",
+		"answers": ["respuesta 1", "respuesta 2", "respuesta 3", "respuesta 4"],
+		"correctAnswer": 1
+	},
+	{
+		"question": "Pregunta tres?",
+		"answers": ["respuesta 1", "respuesta 2", "respuesta 3", "respuesta 4"],
+		"correctAnswer": 2
+	},
+	{
+		"question": "Pregunta cuatro?",
+		"answers": ["respuesta 1", "respuesta 2", "respuesta 3", "respuesta 4"],
+		"correctAnswer": 3
+	},
+	{
+		"question": "Pregunta cinco?",
+		"answers": ["respuesta 1", "respuesta 2", "respuesta 3", "respuesta 4"],
+		"correctAnswer": 0
+	},
+	{
+		"question": "Pregunta seis?",
+		"answers": ["respuesta 1", "respuesta 2", "respuesta 3", "respuesta 4"],
+		"correctAnswer": 1
+	}
+]
